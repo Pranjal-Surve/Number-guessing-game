@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Guess the Number Between 1 and 100</h1>
+        <div class="card p-4 mb-4">
+            <div id="instructions">
+                <p><strong>Instructions:</strong></p>
+                <ul>
+                    <li>Use the buttons to guess a number between 1 and 40.</li>
+                    <li>Color changes to Yellow if your guess is too low.</li>
+                    <li>Color changes to Red if your guess is too high.</li>
+                    <li>Color changes to Green if your guess is correct.</li>
+                    <li>You have a maximum of 6 attempts.</li>
+                </ul>
+            </div>
+            <p class="text-center">Attempts Left: <span id="attempts" class="font-weight-bold">6</span></p>
+            <div id="circle-container" class="d-flex flex-wrap justify-content-center mb-4"></div>
+            <div class="text-center">
+                <button id="reload" class="btn btn-primary">Reload</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
